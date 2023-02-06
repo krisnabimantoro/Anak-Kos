@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: rgb(234, 46, 234);
+}
+.box1 {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 35px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.box2 {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 35px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  margin: 30px;
+  margin-bottom: 55px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 23px;
+  color: rgb(60, 60, 60);
+  font-weight: bold;
+}
+
+.box1 input {
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+.box2 input {
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.box1 input[type="number"] {
+  border: none;
+  border-bottom: 1px solid rgb(177, 177, 177);
+  background: transparent;
+  outline: transparent;
+  height: 40px;
+  font-family: montserrat;
+  -appearance: textfield;
+}
+
+body.dark-mode .targetElement {
+  background: #000000;
+}
+.box1 form a {
+  text-decoration: none;
+}
+.box1 button[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 42%;
+  place-content: center;
+  background: rgb(91, 39, 205);
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-left: 100px;
+  text-decoration: none;
+  font-family: montserrat;
+  margin-bottom: auto;
+}
+
+.box1 button[type="submit"]:hover {
+  cursor: pointer;
+  background: rgb(64, 10, 118);
+}
+
+.instagram {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(132, 132, 132);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 100%;
+}
+.note {
+  margin-top: 90px;
+  text-align: center;
+  font-size: 12px;
+}
+.td1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 500px) {
+  .box1 {
+    width: 300px;
+    height: 300px;
+  }
+  .box1 h1 {
+    font-size: 17px;
+    margin: 20px;
+  }
+  .box1 input[type="number"] {
+    font-size: 10px;
+  }
+  .box1 button[type="submit"] {
+    height: 30px;
+    width: 40%;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 30%;
+    margin-bottom: auto;
+  }
+  .box1 a {
+    margin-bottom: 50px;
+
+    font-size: 9px;
+  }
+}

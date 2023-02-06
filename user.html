@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kalkulator Anak Kos</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box2">
+        <h1>Kalkulator Bulanan <br />Anak Kos</h1>
+        <!-- <span id="result"></span> -->
+        <table class="kalkulator">
+          <tr>
+            <td class="td1">Uang Makan</td>
+            <td>Rp.</td>
+            <td>
+              <span
+                id="uangMakan"
+                onchange="return addCommas(this.value)"
+              ></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="td1">Uang Jajan</td>
+            <td>Rp.</td>
+            <td>
+              <span id="uangJajan"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="td1">Kebutuhan Lainnya</td>
+            <td>Rp.</td>
+            <td><span id="kebutuhanL"></span></td>
+          </tr>
+          <tr>
+            <td class="td1">Tabungan</td>
+            <td>Rp.</td>
+            <td><span id="tabungan"></span></td>
+          </tr>
+        </table>
+        <p class="note">
+          Jangan pernah menghemat uang makan kalian untuk kebutuhan yang tidak
+          penting.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="/javascript/user.js"></script>
+  <script src="/javascript/uang.js"></script>
+</html>
